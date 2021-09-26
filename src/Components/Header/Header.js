@@ -1,10 +1,14 @@
 import React from 'react';
+import "./Header.css"
 
 const Header = () => {
     return (
-        <div>
-            <h2>International summit for world Humanitarian Organization</h2>
-        </div>
+        <header id = "header" className="header-container">
+            <div className="container">
+                <h1>International fundraising summit</h1>
+                <h2>The 9 Richest People in the World</h2>
+            </div>
+        </header>
     );
 };
 

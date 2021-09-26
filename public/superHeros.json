@@ -1,0 +1,93 @@
+[
+    {
+      "key": "001",
+      "name": "Elon Musk",
+      "country": "United States",
+      "netWorth": "199.6",
+      "age": "50",
+      "company": "Tesla, SpaceX",
+      "donation": "99",
+      "img": "https://specials-images.forbesimg.com/imageserve/5f47d4de7637290765bce495/416x416.jpg"
+    },
+    {
+      "key": "002",
+      "name": "Jeff Bezos",
+      "country": "United States",
+      "netWorth": "198.7",
+      "age": "57",
+      "company": "Amazon",
+      "donation": "87",
+      "img": "https://specials-images.forbesimg.com/imageserve/5bb22ae84bbe6f67d2e82e05/416x416.jpg"
+    },
+    {
+      "key": "003",
+      "name": "Bernard Arnault & family",
+      "country": "France",
+      "netWorth": "181.3",
+      "age": "72",
+      "company": "LVMH",
+      "donation": "82",
+      "img": "https://specials-images.forbesimg.com/imageserve/5dc05518ca425400079c659f/416x416.jpg"
+    },
+    {
+      "key": "004",
+      "name": "Bill Gates",
+      "country": "United States",
+      "netWorth": "131.7",
+      "age": "65",
+      "company": "Mirosoft",
+      "donation": "78",
+      "img": "https://specials-images.forbesimg.com/imageserve/5f4ebe0c87612dab4f12a597/416x416.jpg"
+    },
+    {
+      "key": "005",
+      "name": "Mark Zuckerberg",
+      "country": "United States",
+      "netWorth": "126.2",
+      "age": "37",
+      "company": "Facebook",
+      "donation": "72",
+      "img": "https://specials-images.forbesimg.com/imageserve/5c76b7d331358e35dd2773a9/416x416.jpg"
+    },
+    {
+      "key": "006",
+      "name": "Larry Page",
+      "country": "United States",
+      "netWorth": "121.6",
+      "age": "48",
+      "company": "Google",
+      "donation": "70",
+      "img": "https://specials-images.forbesimg.com/imageserve/5c76bcaaa7ea43100043c836/416x416.jpg"
+    },
+    {
+      "key": "007",
+      "name": "Larry Ellison",
+      "country": "United States",
+      "netWorth": "118.1",
+      "age": "77",
+      "company": "software",
+      "donation": "68",
+      "img": "https://specials-images.forbesimg.com/imageserve/5e8b62cfc095010007bffea0/416x416.jpg"
+    },
+    {
+      "key": "008",
+      "name": "Sergey Brin",
+      "country": "United States",
+      "netWorth": "117.2",
+      "age": "48",
+      "company": "Google",
+      "donation": "68",
+      "img": "https://specials-images.forbesimg.com/imageserve/5c7d7c254bbe6f78090d831f/416x416.jpg"
+    },
+    {
+      "key": "009",
+      "name": "Warren Buffett",
+      "country": "United States",
+      "netWorth": "100.8",
+      "age": "91",
+      "company": "Berkshire Hathaway",
+      "donation": "65",
+      "img": "https://specials-images.forbesimg.com/imageserve/5babb7f1a7ea4342a948b79a/416x416.jpg"
+    }
+]
+  
