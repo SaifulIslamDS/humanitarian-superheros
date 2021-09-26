@@ -2,12 +2,13 @@ import React from 'react';
 import "./Card.css";
 
 const Card = (props) => {
+    // destructuring properties  
     const {name, country, netWorth, age, company, donation, img} = props.card || {};
     // console.log(props.card);
     return (
-        <div className="col-md-4">
-            <div className="card h-100">
-            <img src={img} className="card-img-top" alt="..." />
+        <div className="col-md-4 mt-4">
+            <div className="card h-100 card-custom">
+            <img src={img} className="card-img-top img-fluid img-circle" alt={"Photo of " +name}/>
             <div className="card-body">
                 <h3 className="card-name">{name}</h3>
                 <p className="card-info">Age: {age}</p>
@@ -17,7 +18,11 @@ const Card = (props) => {
                 <p className="card-info">Donation: ${donation} M</p>
             </div>
             <div className="card-footer">
-                <button className="btn btn-primary">Add to board</button>
+                <button
+                    onClick={() => props.handleAddToBoard(props.card)}
+                    className="btn btn-board">
+                    <i className="fas fa-clipboard"></i> Add to board
+                </button>
             </div>
             </div>
         </div>

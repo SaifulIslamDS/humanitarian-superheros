@@ -1,3 +1,22 @@
-p.card-info {
+.card-info {
     margin: 0;
+    padding-top: 5px ;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.btn-board {
+    background-color: #0e2d5a;
+    color: white;
+    padding: 10px 20px ;
+}
+.btn-board:hover {
+    background-color: yellowgreen;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.card-custom {
+    padding: 20px;
+}
+.card-custom:hover {
+    box-shadow: 5px 5px 10px rgb(98, 74, 114);
 }
