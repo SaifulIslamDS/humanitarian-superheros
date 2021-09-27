@@ -3,7 +3,7 @@ import "./Card.css";
 
 const Card = (props) => {
     // destructuring properties  
-    const {name, country, netWorth, age, company, donation, img} = props.card || {};
+    const {key, name, country, netWorth, age, company, donation, img} = props.card || {};
     // console.log(props.card);
     return (
         <div className="col-md-4 mt-4">
@@ -11,6 +11,7 @@ const Card = (props) => {
             <img src={img} className="card-img-top img-fluid img-circle" alt={"Photo of " +name}/>
             <div className="card-body">
                 <h3 className="card-name">{name}</h3>
+                <p className="card-info">Ranking: {key}</p>
                 <p className="card-info">Age: {age}</p>
                 <p className="card-info">Compnay: {company}</p>
                 <p className="card-info">Country: {country}</p>
