@@ -30,7 +30,7 @@ const Board = (props) => {
                                     <div>
                                         <button 
                                             className="ms-2" 
-                                            onClick={() => props.handleRemoveFromBoard()}
+                                            onClick={() => handleRemoveFromBoard()}
                                         > X </button>
                                     </div>
                                 </div>
