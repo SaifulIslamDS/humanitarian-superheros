@@ -17,6 +17,12 @@ const Main = () => {
         const newBoard = [...board, card ];
         setBoard(newBoard);
     }; 
+    // Adding event handler function to remove item from board
+    const handleRemoveFromBoard = (card) => {
+        const newBoard = board.filter(item => item.card !== card);
+        setBoard(newBoard);
+        // console.log(newBoard);
+    }; 
     
     //use effects to load data 
     useEffect(() => {
@@ -37,13 +43,17 @@ const Main = () => {
                                     key={card.key} 
                                     card={card}
                                     handleAddToBoard={handleAddToBoard}
-                                    />)
+                                />)
                             }
                         </div>
                     </div>
                     <div className="col-3 mt-4">
                         {/* display board  */}
-                        <Board board={board} />
+                        <Board 
+                            key={board.key} 
+                            board={board}
+                            handleRemoveFromBoard={handleRemoveFromBoard} 
+                        />
                     </div>
                 </div>
             </div>

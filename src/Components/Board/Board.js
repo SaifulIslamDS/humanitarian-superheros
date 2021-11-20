@@ -2,12 +2,11 @@ import React from 'react';
 import "./Board.css";
 
 const Board = (props) => {
-    const {board}= props || {};
+    const {board, handleRemoveFromBoard}= props || {};
     const totalReducer=(prevValue,currentValue)=>prevValue+currentValue.donation;
     // const total=board.reduce(totalReducer,0);
-    const total=board.reduce(  totalReducer   ,  0).toFixed(2);
-
-
+    const total=board.reduce(  totalReducer  ,  0).toFixed(2);
+    
     return (
         <div>
             <h2> <i className="fas fa-clipboard"></i> Fund Board</h2>
@@ -23,9 +22,17 @@ const Board = (props) => {
                                 <div>
                                     <img className="img-custom" src={item.img} alt="img"/>
                                 </div>
-                                <div className="item-meta">
-                                    <h6>{item.name}</h6> 
-                                    <p>${item.donation} M</p>
+                                <div className="item-meta d-flex">
+                                    <div>
+                                        <h6>{item.name}</h6> 
+                                        <p>${item.donation} M</p>
+                                    </div>
+                                    <div>
+                                        <button 
+                                            className="ms-2" 
+                                            onClick={() => props.handleRemoveFromBoard()}
+                                        > X </button>
+                                    </div>
                                 </div>
                             </div> 
                             )

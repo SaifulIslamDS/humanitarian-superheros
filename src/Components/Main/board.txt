@@ -1,0 +1,25 @@
+const handleRemove = key => {
+        const newCart = cart.filter(product => product.key !== key);
+        setCart(newCart);
+        removeFromDb(key);
+}
+
+
+                {
+                    cart.map(product => <ReviewItem
+                        key={product.key}
+                        product={product}
+                        handleRemove={handleRemove}
+                    ></ReviewItem>)
+                }
+
+
+
+    const { name, price, quantity, key } = props.product;
+    const { handleRemove } = props;
+
+
+    const [cart, setCart] = useCart(products);
+
+
+                <button onClick={() => handleRemove(key)} 
