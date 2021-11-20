@@ -18,7 +18,7 @@ const Board = (props) => {
             <div className="card-footer">
                 <div className="list">
                     {
-                        board.map((item) => <div className="list-item d-flex">
+                        board.map(item => <div className="list-item d-flex">
                                 <div>
                                     <img className="img-custom" src={item.img} alt="img"/>
                                 </div>
@@ -27,12 +27,12 @@ const Board = (props) => {
                                         <h6>{item.name}</h6> 
                                         <p>${item.donation} M</p>
                                     </div>
-                                    <div>
+                                    <span>
                                         <button 
                                             className="ms-2" 
                                             onClick={() => handleRemoveFromBoard()}
                                         > X </button>
-                                    </div>
+                                    </span>
                                 </div>
                             </div> 
                             )
